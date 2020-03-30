@@ -7,7 +7,7 @@ namespace App1
         /// <summary>
         /// Background color or fx for blurring.
         /// </summary>
-        public OverlayBackground OverlayBackground { get; set; } = OverlayBackground.black; // Change it to black to get memory leak.
+        public OverlayBackground OverlayBackground { get; set; } = OverlayBackground.fx; // Change it to black to get memory leak.
 
         /// <summary>
         /// How long image should be shown.
