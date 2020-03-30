@@ -26,3 +26,12 @@ But as soon as background image is hidden (black background) it's raising contin
 ![normal_memory](Images/memory_leak.JPG?raw=true "Title")
 
 P.S. even if I work with Opacity instead of Visibility of background image it still creates memory leak.
+
+# Possible workaround
+Set background source only if it's fx background:
+``` c#
+if (MainViewModel.OverlayBackground == OverlayBackground.fx)
+{
+     PreviousBackgroundImage.Source = new BitmapImage(uri);
+}
+```
