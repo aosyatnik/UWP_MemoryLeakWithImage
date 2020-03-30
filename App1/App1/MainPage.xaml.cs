@@ -94,7 +94,11 @@ namespace App1
 
                 var uri = new Uri(BaseUri, _previousFile.LocalPath);
 
+                // Possible workaround
+                //if (MainViewModel.OverlayBackground == OverlayBackground.fx)
+                //{
                 PreviousBackgroundImage.Source = new BitmapImage(uri);
+                //}
                 PreviousForegroundImage.Source = new BitmapImage(uri);
             }
         }
