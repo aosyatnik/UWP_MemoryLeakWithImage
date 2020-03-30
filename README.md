@@ -24,3 +24,5 @@ And now check Process Memory, when background image is visible(fx) it's ok:
 
 But as soon as background image is hidden (black background) it's raising continuously:
 ![normal_memory](Images/memory_leak.JPG?raw=true "Title")
+
+P.S. even if I work with Opacity instead of Visibility of background image it still creates memory leak.
